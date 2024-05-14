@@ -10,7 +10,11 @@ module.exports = {
   // List all users
   list: async (req, res) => {
     try {
-      const users = await User.find();
+      // alternative 1:
+      // const users = await User.find();
+      // alternative 2:
+      // Do not forget to put "res" in front of getModelList...
+      const users = await res.getModelList(User);
       res.status(200).send({
         error: false,
         data: users,
