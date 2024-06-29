@@ -1,3 +1,5 @@
+# Intro
+
 1- ilk olarak kütüphaneler yüklendi
 /_
 cp .env-sample .env
@@ -21,7 +23,6 @@ _/
 10- ana dizindeki index dosyasına routes/index bağlandı.
 11- her yerden gelen hataları yakalayabilmek için bir hata yakalama middleware'i oluşturuldu.
 12- ErrorHandler, bütün api çalıştıktan sonra tüm hataları yakalayabilmek için index.js'de app.listen önce require edildi, çalıştırıldı.
-
 
 {
     "username": "admin",
